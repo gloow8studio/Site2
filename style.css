@@ -6,7 +6,7 @@
     --text-primary: #FFFFFF;
     --text-secondary: #A0A0A0;
     --accent-color: #FFFFFF;
-    
+
     /* Golden Ratio Base Spacing */
     --space-xs: 0.618rem;
     --space-sm: 1rem;
@@ -29,7 +29,8 @@ body {
     background-color: var(--bg-color);
     color: var(--text-primary);
     font-family: var(--font-primary);
-    line-height: 1.618; /* Proporção Áurea para leitura */
+    line-height: 1.618;
+    /* Proporção Áurea para leitura */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -60,7 +61,8 @@ h3 {
 p {
     font-size: 1rem;
     color: var(--text-secondary);
-    max-width: 65ch; /* Medida ideal de leitura */
+    max-width: 65ch;
+    /* Medida ideal de leitura */
 }
 
 /* Layout Componentes */
@@ -164,13 +166,13 @@ p {
     h1 {
         font-size: var(--space-lg);
     }
-    
+
     .header {
         flex-direction: column;
         gap: var(--space-md);
         padding: var(--space-md);
     }
-    
+
     .nav {
         gap: var(--space-md);
         flex-wrap: wrap;
@@ -180,7 +182,7 @@ p {
     .main-content {
         padding: var(--space-lg) var(--space-md);
     }
-    
+
     .module-card {
         min-height: auto;
     }
