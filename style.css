@@ -1,0 +1,187 @@
+:root {
+    /* Color Palette - Dark Mode Minimalista S.C.A.M. */
+    --bg-color: #000000;
+    --card-bg: #1A1A1A;
+    --border-color: #333333;
+    --text-primary: #FFFFFF;
+    --text-secondary: #A0A0A0;
+    --accent-color: #FFFFFF;
+    
+    /* Golden Ratio Base Spacing */
+    --space-xs: 0.618rem;
+    --space-sm: 1rem;
+    --space-md: 1.618rem;
+    --space-lg: 2.618rem;
+    --space-xl: 4.236rem;
+    --space-xxl: 6.854rem;
+
+    /* Typography */
+    --font-primary: 'Space Grotesk', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-primary);
+    line-height: 1.618; /* Proporção Áurea para leitura */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Hierarchy */
+h1 {
+    font-size: var(--space-xl);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: var(--space-md);
+}
+
+h2 {
+    font-size: var(--space-md);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: var(--space-sm);
+    color: var(--text-secondary);
+    font-weight: 400;
+    margin-top: calc(var(--space-xs) / 2);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    max-width: 65ch; /* Medida ideal de leitura */
+}
+
+/* Layout Componentes */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+    font-size: var(--space-md);
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.nav {
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--text-primary);
+}
+
+.main-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-lg);
+}
+
+/* Hero Section */
+.hero {
+    max-width: 900px;
+    margin-bottom: var(--space-xxl);
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+/* Modules Grid (S.C.A.M.) */
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-md);
+}
+
+.module-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: var(--space-lg);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+}
+
+.module-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+}
+
+.module-header {
+    margin-bottom: var(--space-md);
+}
+
+.module-card p {
+    margin-top: auto;
+}
+
+/* Footer */
+.footer {
+    padding: var(--space-lg);
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    margin-top: var(--space-xxl);
+}
+
+.footer p {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: var(--space-lg);
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: var(--space-md);
+        padding: var(--space-md);
+    }
+    
+    .nav {
+        gap: var(--space-md);
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-content {
+        padding: var(--space-lg) var(--space-md);
+    }
+    
+    .module-card {
+        min-height: auto;
+    }
+}
