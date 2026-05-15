@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gloow8 Studio | The Core</title>
+    <title>Gloow8 Studio | S.C.A.M. Architecture</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,78 +11,129 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo">GLOOW8</div>
+        <div class="logo"><a href="#core">GLOOW8</a></div>
         <nav class="nav">
-            <a href="#core">The Core</a>
-            <a href="#modules">Módulos S.C.A.M.</a>
-            <a href="#system">Eons System</a>
+            <a href="#core" class="nav-link">The Core</a>
+            <a href="#vyra" class="nav-link">Vyra</a>
+            <a href="#elon" class="nav-link">Elon</a>
+            <a href="#kryon" class="nav-link">Kryon</a>
+            <a href="#zynth" class="nav-link">Zynth</a>
+            <a href="#auron" class="nav-link">Auron</a>
+            <a href="#nexar" class="nav-link">Nexar</a>
         </nav>
+        <button class="mobile-menu-btn" aria-label="Abrir Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
     </header>
 
     <main class="main-content">
-        <section id="core" class="hero">
-            <div class="infinity-core">
-                <svg width="120" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M30 10C18.954 10 10 18.954 10 30C10 41.046 18.954 50 30 50C38.077 50 44.975 44.808 48.163 37.5L71.837 22.5C75.025 15.192 81.923 10 90 10C101.046 10 110 18.954 110 30C110 41.046 101.046 50 90 50C81.923 50 75.025 44.808 71.837 37.5L48.163 22.5C44.975 15.192 38.077 10 30 10Z" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+        <!-- THE CORE -->
+        <section id="core" class="section hero fade-in">
+            <div class="parallax-bg" data-speed="0.4"></div>
+            <div class="content-wrapper">
+                <div class="infinity-core">
+                    <svg width="120" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 10C18.954 10 10 18.954 10 30C10 41.046 18.954 50 30 50C38.077 50 44.975 44.808 48.163 37.5L71.837 22.5C75.025 15.192 81.923 10 90 10C101.046 10 110 18.954 110 30C110 41.046 101.046 50 90 50C81.923 50 75.025 44.808 71.837 37.5L48.163 22.5C44.975 15.192 38.077 10 30 10Z" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h1>The Core</h1>
+                <p>Ecossistema de design modular e engenharia digital de alta precisão. Arquitetura industrial de luxo fundamentada em métricas rigorosas.</p>
+                <a href="#vyra" class="scroll-down">Explorar Arquitetura</a>
             </div>
-            <h1>The Core</h1>
-            <p>Ecossistema de design modular e engenharia digital de alta precisão. Arquitetura industrial de luxo fundamentada em métricas rigorosas.</p>
         </section>
 
-        <section id="modules" class="modules-grid">
-            <a href="modules/vyra.html" class="module-card">
-                <div class="module-header">
+        <!-- VYRA -->
+        <section id="vyra" class="section module-section fade-in">
+            <div class="content-wrapper grid-layout">
+                <div class="module-text">
                     <h2>VYRA</h2>
                     <h3>Branding e Semiótica</h3>
+                    <p>Exposição de identidades visuais. Precisão matemática em curvas Bézier e construção de grids de marca.</p>
                 </div>
-                <p>Exposição de identidades visuais. Precisão matemática em curvas Bézier e construção de grids de marca.</p>
-            </a>
+                <div class="module-visual">
+                    <div class="visual-placeholder">Asset Geométrico</div>
+                </div>
+            </div>
+        </section>
 
-            <a href="modules/elon.html" class="module-card">
-                <div class="module-header">
+        <!-- ELON -->
+        <section id="elon" class="section module-section reverse fade-in">
+            <div class="content-wrapper grid-layout">
+                <div class="module-text">
                     <h2>ELON</h2>
                     <h3>Engenharia Front-end</h3>
+                    <p>Layout limpo exibindo performance extrema. Arquitetura de código estático otimizado para velocidade bruta.</p>
                 </div>
-                <p>Layout limpo exibindo performance extrema. Arquitetura de código estático otimizado para velocidade bruta.</p>
-            </a>
+                <div class="module-visual">
+                    <div class="visual-placeholder">Estrutura Estática</div>
+                </div>
+            </div>
+        </section>
 
-            <a href="modules/kryon.html" class="module-card">
-                <div class="module-header">
+        <!-- KRYON -->
+        <section id="kryon" class="section module-section fade-in">
+            <div class="content-wrapper grid-layout">
+                <div class="module-text">
                     <h2>KRYON</h2>
                     <h3>Fluxos e Prototipagem</h3>
+                    <p>Documentação de interface e arquitetura de informação. Mapeamento meticuloso de fluxo centrado no humano.</p>
                 </div>
-                <p>Documentação de interface e arquitetura de informação. Mapeamento meticuloso de fluxo centrado no humano.</p>
-            </a>
+                <div class="module-visual">
+                    <div class="visual-placeholder">Wireframe System</div>
+                </div>
+            </div>
+        </section>
 
-            <a href="modules/zynth.html" class="module-card">
-                <div class="module-header">
+        <!-- ZYNTH -->
+        <section id="zynth" class="section module-section reverse fade-in">
+            <div class="content-wrapper grid-layout">
+                <div class="module-text">
                     <h2>ZYNTH</h2>
                     <h3>VFX e Dinamismo</h3>
+                    <p>Showcase em players minimalistas. Animações de interface e efeitos visuais com timing cinematográfico.</p>
                 </div>
-                <p>Showcase em players minimalistas. Animações de interface e efeitos visuais com timing cinematográfico.</p>
-            </a>
+                <div class="module-visual">
+                    <div class="visual-placeholder">VFX Player</div>
+                </div>
+            </div>
+        </section>
 
-            <a href="modules/auron.html" class="module-card">
-                <div class="module-header">
+        <!-- AURON (3D Photorealistic Layout) -->
+        <section id="auron" class="section module-section auron-section fade-in">
+            <div class="content-wrapper">
+                <div class="auron-header">
                     <h2>AURON</h2>
                     <h3>Realismo 3D e ArchViz</h3>
+                    <p>Galeria de luxo para renders fotorrealistas de alta fidelidade. Iluminação global PBR e perspectiva técnica impecável.</p>
                 </div>
-                <p>Galeria de luxo para renders fotorrealistas de alta fidelidade. Iluminação global PBR e perspectiva técnica impecável.</p>
-            </a>
+                <div class="auron-gallery">
+                    <div class="gallery-item large">Render Principal PBR</div>
+                    <div class="gallery-item">Texturização Física</div>
+                    <div class="gallery-item">Luz Global</div>
+                </div>
+            </div>
+        </section>
 
-            <a href="modules/nexar.html" class="module-card">
-                <div class="module-header">
+        <!-- NEXAR -->
+        <section id="nexar" class="section module-section reverse fade-in">
+            <div class="content-wrapper grid-layout">
+                <div class="module-text">
                     <h2>NEXAR</h2>
                     <h3>Assets e Mundos Digitais</h3>
+                    <p>Modelagem de cenários e personagens. Otimização de malhas poligonais para ambientação de luxo e imersão.</p>
                 </div>
-                <p>Modelagem de cenários e personagens. Otimização de malhas poligonais para ambientação de luxo e imersão.</p>
-            </a>
+                <div class="module-visual">
+                    <div class="visual-placeholder">Topologia Poligonal</div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer id="system" class="footer">
+    <footer class="footer">
         <p>&copy; 2026 Gloow8 Studio. Eons System Infrastructure.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
