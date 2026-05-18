@@ -275,52 +275,6 @@ p {
     font-family: monospace;
 }
 
-/* AURON Specific (3D Gallery Layout) */
-.auron-section {
-    align-items: flex-start;
-    padding-top: calc(var(--space-xxl) * 1.2);
-}
-
-.auron-header {
-    text-align: center;
-    margin-bottom: var(--space-xl);
-}
-
-.auron-header p {
-    margin: 0 auto;
-}
-
-.auron-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 350px;
-    gap: var(--space-md);
-}
-
-.gallery-item {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--border-color);
-    font-family: monospace;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.5s ease;
-}
-
-.gallery-item:hover {
-    transform: scale(1.03);
-    border-color: var(--text-primary);
-    z-index: 10;
-}
-
-.gallery-item.large {
-    grid-column: 1 / -1;
-    grid-row: span 2;
-}
-
 /* Footer */
 .footer {
     padding: var(--space-lg);
@@ -345,20 +299,6 @@ p {
     
     .reverse .grid-layout {
         direction: ltr;
-    }
-    
-    .module-visual {
-        aspect-ratio: 16/9;
-    }
-
-    .auron-gallery {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 250px;
-    }
-    
-    .gallery-item.large {
-        grid-column: 1;
-        grid-row: span 1;
     }
     
     .nav {
